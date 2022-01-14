@@ -25,7 +25,7 @@ Map<String, dynamic> _$BluetoothDeviceToJson(BluetoothDevice instance) {
 
   writeNotNull('name', instance.name);
   writeNotNull('address', instance.address);
-  writeNotNull('type', instance.type ?? 0);
-  writeNotNull('connected', instance.connected ?? false);
+  writeNotNull('type', instance.type);
+  writeNotNull('connected', instance.connected);
   return val;
 }
